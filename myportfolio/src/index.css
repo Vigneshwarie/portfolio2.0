@@ -1,11 +1,9 @@
 :root {
      font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
      line-height: 1.5;
-     font-weight: 400;
      color-scheme: light dark;
-     color: rgba(255, 255, 255, 0.87);
      background-color: #000000;
-     font-synthesis: none;
+     font-synthesis:none;
      text-rendering: optimizeLegibility;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
@@ -13,7 +11,7 @@
 
 a {
      font-weight: 500;
-     color: #62CF78;
+     color: #FFFFFF;
      text-decoration: inherit;
 }
 a:hover {
@@ -23,7 +21,6 @@ a:hover {
 body {
      margin: 0;
      display: flex;
-     place-items: center;
      min-width: 320px;
      min-height: 100vh;
 }
