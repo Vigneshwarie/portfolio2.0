@@ -3,10 +3,10 @@ import NavbarMenu from "./NavbarMenu";
 
 function Header() {
      return (
-          <Container>
+          <Container className='container-position'>
                <header id="header">
                     <h1><a href="index.html">Vigneswari Sambandam</a></h1>
-                    <h3>a Master's graduate, passionate about designing and developing full-stack applications</h3>
+                    <h5>a Master's graduate, passionate about designing and developing full-stack applications</h5>
                     <NavbarMenu/>
                </header>
           </Container>
