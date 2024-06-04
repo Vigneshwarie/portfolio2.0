@@ -15,6 +15,7 @@ import Fade from 'react-bootstrap/Fade';
 
 
 
+
 function NavbarMenu() {
      const [activePage, setActivePage] = useState(false);
      const [open, setOpen] = useState(false);
@@ -85,7 +86,7 @@ function NavbarMenu() {
                          </Nav>
                     </Navbar.Collapse>
                </Navbar>
-               <div style={{ minHeight: '150px', padding:'5px' }} data-aos="fade-up" data-aos-delay="100">
+               <div style={{ minHeight: '150px', padding:'5px' }} >
                     
                          <div id="example-collapse-text">
                               <Card body style={{ width: '800px', backgroundColor: '#222529', color: '#fff' }}>
