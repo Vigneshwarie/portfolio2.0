@@ -2,7 +2,7 @@
      font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
      line-height: 1.5;
      color-scheme: light dark;
-     background-color: #000000;
+     background-color: #222529;
      font-synthesis:none;
      text-rendering: optimizeLegibility;
      -webkit-font-smoothing: antialiased;
@@ -52,7 +52,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
      :root {
           color: #fff;
-          background-color: #000000;
+          background-color: #222529;
      }    
      a:hover {
           color: #62CF78;
