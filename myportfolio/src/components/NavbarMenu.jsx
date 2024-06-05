@@ -2,27 +2,20 @@ import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../assets/styles/Navbar.css';
-import Home from '../pages/Home';
 import About from '../pages/About';
 import Experience from '../pages/Experience';
 import Projects from '../pages/Projects';
 import Skills from '../pages/Skills';
 import Awards from '../pages/Awards';
 import Contact from '../pages/Contact';
-import Card from 'react-bootstrap/Card';
-import Fade from 'react-bootstrap/Fade';
-
-
+import Container from 'react-bootstrap/Container';
 
 
 function NavbarMenu() {
      const [activePage, setActivePage] = useState(false);
-     const [open, setOpen] = useState(false);
 
      const renderPage = () => {
           switch (activePage) {
-               case 'home':
-                    return <Home />;
                case 'about':
                     return <About />;
                case 'experience':
@@ -36,56 +29,38 @@ function NavbarMenu() {
                case 'contact':
                     return <Contact />;
                default:
-                    return <Home />;
+                    return;
           }
      };
      return (
-          <>
+          <Container>
                <Navbar expand="lg" className="custom-navbar">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                         <Nav className="me-auto">
-                              <Nav.Link href="#home">Home</Nav.Link>
-                              <Nav.Link href="#about" oni onClick={() => {
-                                   setActivePage(null);
-                                   setOpen(!open);
+                         <Nav variant="underline" className="me-auto">
+                              <Nav.Link href="#about" onClick={() => {
                                    setActivePage('about');
-                              }} aria-controls="example-collapse-text"
-        aria-expanded={open}>About</Nav.Link>
-                              <Nav.Link href="#experience" onClick={() => { 
-                                   setActivePage(null);
-                                   setOpen(!open);
+                              }}>About</Nav.Link>
+                              <Nav.Link href="#experience" onClick={() => {
                                    setActivePage('experience');
-                              }} aria-controls="example-collapse-text"
-        aria-expanded={open}>Experience</Nav.Link>
-                              <Nav.Link href="#projects" onClick={() => { 
-                                   setActivePage(null);
-                                   setOpen(!open);
+                              }}>Experience</Nav.Link>
+                              <Nav.Link href="#projects" onClick={() => {
                                    setActivePage('projects');
-                              }} aria-controls="example-collapse-text"
-        aria-expanded={open}>Projects</Nav.Link>
+                              }}>Projects</Nav.Link>
                               <Nav.Link href="#skills" onClick={() => {
-                                   setActivePage(null);
-                                   setOpen(!open);
                                    setActivePage('skills');
-                              }} aria-controls="example-collapse-text"
-        aria-expanded={open}>Skills</Nav.Link>
+                              }}>Skills</Nav.Link>
                               <Nav.Link href="#awards" onClick={() => {
-                                   setActivePage(null);
-                                   setOpen(!open);
                                    setActivePage('awards');
-                               }} aria-controls="example-collapse-text"
-        aria-expanded={open}>Awards</Nav.Link>
+                              }}>Awards</Nav.Link>
                               <Nav.Link href="#contact" onClick={() => {
-                                   setActivePage(null);
-                                   setOpen(!open);
                                    setActivePage('contact');
-                               }} aria-controls="example-collapse-text"
-        aria-expanded={open}>Contact</Nav.Link>
+                              }}>Contact</Nav.Link>
                          </Nav>
                     </Navbar.Collapse>
                </Navbar>
-          </>   
+               {renderPage()}
+          </Container>   
      );
 }
 

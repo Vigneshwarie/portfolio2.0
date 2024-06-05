@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -10,10 +11,11 @@ function Awards() {
      
      return (
           <section className="awards" >
-               <div data-aos="fade-up" data-aos-delay="100">
-                    <h3>Awards</h3>
-                    <p>This is the awards page.</p>
-               </div>
+               <Container data-aos="fade-up" data-aos-delay="100">
+                    <div id="awards">
+                         <p>This is the awards page.</p>
+                    </div>
+               </Container>
           </section>
      );
 }
