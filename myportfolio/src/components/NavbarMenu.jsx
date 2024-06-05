@@ -12,7 +12,7 @@ import Container from 'react-bootstrap/Container';
 
 
 function NavbarMenu() {
-     const [activePage, setActivePage] = useState(false);
+     const [activePage, setActivePage] = useState(true);
 
      const renderPage = () => {
           switch (activePage) {

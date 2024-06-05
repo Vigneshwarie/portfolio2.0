@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Home from './pages/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import NavbarMenu from "./components/NavbarMenu";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

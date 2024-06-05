@@ -8,6 +8,7 @@ function Skills() {
      return (
           <section className="content-section">
                <Container data-aos="fade-up" data-aos-delay="100">
+                    <h6>Skills</h6>
                     <div id="skills">
                          <p>This is the skills page.</p>
                     </div>

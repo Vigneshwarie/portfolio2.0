@@ -13,6 +13,7 @@ function Experience() {
      return (
           <section className="content-section">
                <Container data-aos="fade-up" data-aos-delay="100">
+                    <h6>Experience</h6>
                     <div id="experience">
                          <p>This is the experience page.</p>
                     </div>

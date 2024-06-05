@@ -13,6 +13,7 @@ function Awards() {
      return (
           <section className="content-section" >
                <Container data-aos="fade-up" data-aos-delay="100">
+                    <h6>Awards</h6>
                     <div id="awards">
                          <ul>
                               <li><span className="highlight-font">Abbott Healthcare Award</span> - for successful implementation of  Salesportal Migration  - 2018</li>

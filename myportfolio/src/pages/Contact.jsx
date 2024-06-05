@@ -13,6 +13,7 @@ function Contact() {
      return (
           <section className="content-section">
                <Container data-aos="fade-up" data-aos-delay="100">
+                    <h6>Contact</h6>
                     <div id="contact">
                          <p>This is the contact page.</p>
                     </div>
