@@ -13,6 +13,7 @@ function Education() {
      return (
           <section className="content-section">
                <Container data-aos="fade-up" data-aos-delay="100">
+                    <h6>Education</h6>
                     <div id="education">
                          <p>This is the education page.</p>
                     </div>

@@ -1,15 +1,14 @@
 #root {
      width: 100%;
      margin: 0 auto;
-     padding: 0px;
+     padding: 0 auto;
+     text-align: left;
      font-family: Georgia, Garamond, Helvetica, 'Helvetica Neue', 'Open Sans', 'Segoe UI', 'sans-serif';
 }
 
 body {
      background-image: url('./assets/images/bgimage1.jpg');
      color: #FFFFFF;
-     margin: 0px;
-     padding: 0px;
 }
 
 .logo {

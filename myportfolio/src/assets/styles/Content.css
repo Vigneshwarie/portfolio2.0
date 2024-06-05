@@ -1,14 +1,17 @@
 .content-section {
-     display: flex;
-     justify-content:space-evenly;
      align-items: left;
      width:100%;
-     margin-top:3vh;
      background-color: #000;
-     margin-bottom: 1vh;
-     line-height: 1.9em;
+     height: 70vh;
 }
 
 .highlight-font {
      color: #62CF78;
+}
+
+.content-section h6 {
+     font-size: 1.2em;
+     font-weight: 500;
+     color: #62CF78;
+     font-weight: bolder;
 }
