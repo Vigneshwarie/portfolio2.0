@@ -1,12 +1,12 @@
 #root {
-     max-width: 1280px;
+     width: 100%;
      margin: 0 auto;
      padding: 0px;
      font-family: Georgia, Garamond, Helvetica, 'Helvetica Neue', 'Open Sans', 'Segoe UI', 'sans-serif';
 }
 
 body {
-     background-color: #222529;
+     background-image: url('./assets/images/bgimage1.jpg');
      color: #FFFFFF;
      margin: 0px;
      padding: 0px;

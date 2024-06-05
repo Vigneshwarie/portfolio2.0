@@ -1,10 +1,14 @@
-//import Header from './components/Header';
-/*
+import Header from '../components/Header';
+import Container from 'react-bootstrap/Container';
+import '../assets/styles/Home.css';
+
 function Home() {
      return (
-          <Header/>
+          <Container className='homesection'>
+              <Header/>
+          </Container>
      );
 }
 
 
-export default Home; */
+export default Home; 

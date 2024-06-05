@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../assets/styles/Navbar.css';
-//import Home from '../pages/Home';
+import Home from '../pages/Home';
 import About from '../pages/About';
 import Experience from '../pages/Experience';
 import Projects from '../pages/Projects';
@@ -10,7 +10,6 @@ import Skills from '../pages/Skills';
 import Awards from '../pages/Awards';
 import Contact from '../pages/Contact';
 import Card from 'react-bootstrap/Card';
-import Collapse from 'react-bootstrap/Collapse';
 import Fade from 'react-bootstrap/Fade';
 
 
@@ -23,7 +22,7 @@ function NavbarMenu() {
      const renderPage = () => {
           switch (activePage) {
                case 'home':
-                    return <About />;
+                    return <Home />;
                case 'about':
                     return <About />;
                case 'experience':
@@ -37,7 +36,7 @@ function NavbarMenu() {
                case 'contact':
                     return <Contact />;
                default:
-                    return <About />;
+                    return <Home />;
           }
      };
      return (
@@ -86,15 +85,6 @@ function NavbarMenu() {
                          </Nav>
                     </Navbar.Collapse>
                </Navbar>
-               <div style={{ minHeight: '150px', padding:'5px' }} >
-                    
-                         <div id="example-collapse-text">
-                              <Card body style={{ width: '800px', backgroundColor: '#222529', color: '#fff' }}>
-                              {renderPage()}
-                              </Card>
-                         </div>
-                    
-               </div>
           </>   
      );
 }
