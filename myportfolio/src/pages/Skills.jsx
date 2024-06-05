@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../assets/styles/Content.css';
 
 function Skills() {
      return (
-          <section className="skills">
+          <section className="content-section">
                <Container data-aos="fade-up" data-aos-delay="100">
                     <div id="skills">
                          <p>This is the skills page.</p>
