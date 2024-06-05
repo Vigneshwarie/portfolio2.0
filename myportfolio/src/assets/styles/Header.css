@@ -6,11 +6,17 @@
      text-align: left;
 }
 
-.header h1 {
-     font-size: 2em;
-     font-weight:bolder;
+.header .heading {
+     font-size: 1em;
+     font-weight:bold;
      padding-top: 40px;
      padding-bottom: 10px;
+     text-decoration: none;
+     color:#fff;
+}
+
+.heading:hover {
+     color: #62CF78;
 }
 
 .header p {
