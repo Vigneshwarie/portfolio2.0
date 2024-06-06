@@ -6,13 +6,19 @@ import '../assets/styles/Content.css';
 
 function Contact() {
      useEffect(() => {
-          AOS.init();
+          AOS.init({
+               disable: "mobile",
+               duration: 600, 
+               once: true,     
+               mirror: false, 
+          });
+          AOS.refresh();
      }, []
      );
      
      return (
-          <section className="content-section">
-               <Container data-aos="fade-up" data-aos-delay="100">
+          <section className="content-section" data-aos="fade-up" data-aos-delay="100">
+               <Container>
                     <h6>Contact</h6>
                     <div id="contact">
                          <p>Hello, and thank you for visiting my portfolio! I'm actively seeking opportunities for Staff Software Engineer, Technical Lead, or Senior Software Engineer roles. I'm excited about joining a dynamic team where I can contribute my expertise and passion for software development.</p>

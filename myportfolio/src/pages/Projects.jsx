@@ -7,13 +7,19 @@ import '../assets/styles/Content.css';
 
 function Projects() {
      useEffect(() => {
-          AOS.init();
+          AOS.init({
+               disable: "mobile",
+               duration: 600, 
+               once: true,     
+               mirror: false,
+          });
+          AOS.refresh();
      }, []
      );
 
      return (
-          <section className="content-section">
-               <Container data-aos="fade-up" data-aos-delay="100">
+          <section className="content-section" data-aos="fade-up" data-aos-delay="100">
+               <Container>
                     <h6>Projects</h6>
                     <div id="projects">
                          <p>This is the projects page.</p>
