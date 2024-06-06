@@ -12,8 +12,9 @@ function NavbarMenu() {
                <Navbar collapseOnSelect={true} expand="lg" className="custom-navbar">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                         <Nav variant="underline" className="me-auto">
-                              <Nav.Link as={Link} to="/About" eventKey="/About" className={currentPage === "/About" ? 'nav-link active' : 'nav-link'}>About</Nav.Link>
+                         <Nav variant="underline" className="">
+                              <Nav.Link as={Link} to="/" eventKey="/">Home</Nav.Link>
+                              <Nav.Link as={Link} to="/About" eventKey="/About">About</Nav.Link>
                               <Nav.Link as={Link} to="/Experience" eventKey="/Experience">Experience</Nav.Link>
                               <Nav.Link as={Link} to="/Projects" eventKey="/Projects">Projects</Nav.Link>
                               <Nav.Link as={Link} to="/Skills" eventKey="/Skills">Skills</Nav.Link>
