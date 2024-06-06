@@ -18,14 +18,12 @@ function Projects() {
      );
 
      return (
-          <section className="content-section" data-aos="fade-up" data-aos-delay="100">
-               <Container>
-                    <h6>Projects</h6>
-                    <div id="projects">
-                         <p>This is the projects page.</p>
-                    </div>
-               </Container>
-          </section>
+          <Container className="content-section" data-aos="fade-up" data-aos-delay="100">
+               <h6>Projects</h6>
+               <div id="projects">
+                    <p>This is the projects page.</p>
+               </div>
+          </Container>
      );
 }
 
