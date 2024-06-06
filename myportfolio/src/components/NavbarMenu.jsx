@@ -17,6 +17,7 @@ function NavbarMenu() {
                               <Nav.Link as={Link} to="/About" eventKey="/About">About</Nav.Link>
                               <Nav.Link as={Link} to="/Experience" eventKey="/Experience">Experience</Nav.Link>
                               <Nav.Link as={Link} to="/Projects" eventKey="/Projects">Projects</Nav.Link>
+                              <Nav.Link as={Link} to="/Education" eventKey="/Education">Education</Nav.Link>
                               <Nav.Link as={Link} to="/Skills" eventKey="/Skills">Skills</Nav.Link>
                               <Nav.Link as={Link} to="/Awards" eventKey="/Awards">Awards</Nav.Link>
                               <Nav.Link as={Link} to="/Contact" eventKey="/Contact">Contact</Nav.Link>

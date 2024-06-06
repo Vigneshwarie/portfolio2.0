@@ -6,13 +6,19 @@ import '../assets/styles/Content.css';
 
 function Experience() {
      useEffect(() => {
-          AOS.init();
+          AOS.init({
+               disable: "mobile",
+               duration: 600, 
+               once: true,     
+               mirror: false,
+          });
+          AOS.refresh();
      }, []
      );
 
      return (
-          <section className="content-section">
-               <Container data-aos="fade-up" data-aos-delay="100">
+          <section className="content-section" data-aos="fade-up" data-aos-delay="100">
+               <Container>
                     <h6>Experience</h6>
                     <div id="experience">
                          <p>This is the experience page.</p>
