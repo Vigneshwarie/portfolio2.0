@@ -17,14 +17,12 @@ function Experience() {
      );
 
      return (
-          <section className="content-section" data-aos="fade-up" data-aos-delay="100">
-               <Container>
-                    <h6>Experience</h6>
-                    <div id="experience">
-                         <p>This is the experience page.</p>
-                    </div>
-               </Container>
-          </section>
+          <Container className="content-section" data-aos="fade-up" data-aos-delay="100">
+               <h6>Experience</h6>
+               <div id="experience">
+                    <p>This is the experience page.</p>
+               </div>
+          </Container>
      );
 }
 
