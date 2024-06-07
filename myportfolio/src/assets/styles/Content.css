@@ -21,7 +21,7 @@
 .content-section .icon-box {
      text-align: center;
      background: rgba(204, 204, 204, 0.1);
-     padding: 80px 20px;
+     padding: 75px 25px;
      transition: all ease-in-out 0.3s;
 }
 
@@ -71,6 +71,10 @@
      line-height: 24px;
      font-size: 14px;
      margin-bottom: 0;
+}
+
+.content-section .icon-box a {
+     color: #fff;
 }
 
 .content-section .icon-box:hover {
