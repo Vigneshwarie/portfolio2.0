@@ -3,6 +3,7 @@ import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../assets/styles/Content.css';
+import Social from '../components/Social';
 
 function Contact() {
      useEffect(() => {
@@ -55,13 +56,36 @@ function Contact() {
      
      return (
           <Container className="content-section" data-aos="fade-up" data-aos-delay="100">
-               <h6>Contact</h6>
-               <div id="contact">
-                    <p>Hello, and thank you for visiting my portfolio! I'm actively seeking opportunities for Staff Software Engineer, Technical Lead, or Senior Software Engineer roles. I'm excited about joining a dynamic team where I can contribute my expertise and passion for software development.</p>
-                    <p>Whether you're a hiring manager, recruiter, or fellow developer interested in discussing potential collaborations or job opportunities, I'd love to hear from you. Feel free to contact me using the contact form below or via email <a href="mailto:vigneswari.sambandam@gmail.com"><b>here</b></a>. I prioritize responding promptly to all inquiries, so you can expect to hear back from me soon.
-                    </p>
-                    <p>Thank you for considering me for your team. I'm eager to discuss how my skills and experience align with your organization's needs and how I can help drive its success.</p>
-                    <p>I am looking forward to connecting with you!</p>
+               <section>
+                    <h6>Contact</h6>
+                    <div id="contact">
+                         <p>Hello, and thank you for visiting my portfolio! I'm actively seeking opportunities for Staff Software Engineer, Technical Lead, or Senior Software Engineer roles. I'm excited about joining a dynamic team where I can contribute my expertise and passion for software development.</p>
+                         <p>Whether you're a hiring manager, recruiter, or fellow developer interested in discussing potential collaborations or job opportunities, I'd love to hear from you. Feel free to contact me using the contact form below or via email <a href="mailto:vigneswari.sambandam@gmail.com"><b>here</b></a>. I prioritize responding promptly to all inquiries, so you can expect to hear back from me soon.
+                         </p>
+                         <p>Thank you for considering me for your team. I'm eager to discuss how my skills and experience align with your organization's needs and how I can help drive its success.</p>
+                         <p>I am looking forward to connecting with you!</p>
+                    </div>
+               </section>
+               
+               <div className="row mt-2">
+                    <div className="col-md-6 mt-4 d-flex align-items-stretch">
+                         <div className="info-box">
+                              <i className="bx bx-share-alt"></i>
+                              <h3>Social Profiles</h3>
+                              <Social />
+                         </div>
+                    </div>
+
+                    <div className="col-md-6 mt-4 d-flex align-items-stretch">
+                         <div className="info-box">
+                              <i className="bx bxs-contact"></i>
+                              <h3>Email &amp; Phone</h3>
+                              <div className="contact">
+                                   <a href="#" className=""><i className="bx bx-envelope"></i></a>
+                                   <a href="#" className=""><i className="bx bx-phone-call"></i></a>
+                              </div>
+                         </div>
+                    </div>
                </div>
                <section>
                     <div>
