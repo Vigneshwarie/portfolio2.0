@@ -160,3 +160,28 @@
 }
 
 /* End Experience Section */
+
+/* Start Contact Section */
+.content-section .btn.btn-primary {
+     background-color: #62CF78;
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+     border-color: #62CF78;
+}
+
+.content-section .btn.btn-primary:hover {
+     background-color: #35e888;
+     color: #fff;
+}
+
+.content-section .frm{
+     padding: 20px;
+     align-items: left;
+}
+
+.content-section .lbl {
+     text-align: left;
+     align-items: center;
+}
+/*End Contact Section */
