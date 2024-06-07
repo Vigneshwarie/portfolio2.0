@@ -17,7 +17,7 @@
      font-weight: bolder;
 }
 
-
+/* Start Projects Section */
 .content-section .icon-box {
      text-align: center;
      background: rgba(204, 204, 204, 0.1);
@@ -94,7 +94,69 @@
      background: #35e888;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.content-section .icon-box:hover h4 a,
+.content-section .icon-box:hover p {
      color: #fff;
 }
+/* End Projects Section */
+
+/* Start Experience Section */
+.content-section .resume-title {
+     font-size: 26px;
+     font-weight: 700;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: #fff;
+}
+
+.content-section .resume-item {
+     padding: 0 0 20px 20px;
+     margin-top: -2px;
+     border-left: 2px solid rgba(255, 255, 255, 0.2);
+     position: relative;
+}
+
+.content-section .resume-item h5 {
+     line-height: 18px;
+     font-size: 18px;
+     font-weight: 600;
+     text-transform: uppercase;
+     font-family: "Poppins", sans-serif;
+     color: #62CF78;
+     margin-bottom: 10px;
+}
+
+.content-section .resume-item h6 {
+     font-size: 16px;
+     background: rgba(255, 255, 255, 0.15);
+     padding: 5px 15px;
+     display: inline-block;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.content-section .resume-item ul {
+     padding-left: 20px;
+}
+
+.content-section .resume-item ul li {
+     padding-bottom: 10px;
+}
+
+.content-section .resume-item:last-child {
+     padding-bottom: 0;
+}
+
+.content-section .resume-item::before {
+     content: "";
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     border-radius: 50px;
+     left: -9px;
+     top: 0;
+     background: #62CF78;
+     border: 2px solid #62CF78;
+}
+
+/* End Experience Section */
