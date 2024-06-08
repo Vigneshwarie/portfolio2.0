@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../assets/styles/Content.css';
 import Social from '../components/Social';
+import { validateEmail } from '../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
      useEffect(() => {
@@ -16,6 +18,8 @@ function Contact() {
           AOS.refresh();
      }, []
      );
+
+     const form = useRef();
 
      const [username, setUserName] = useState('');
      const [email, setEmail] = useState('');
@@ -36,6 +40,19 @@ function Contact() {
                setErrorMessage('Please enter your message');
                return;
           } 
+
+          emailjs
+               .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+                         publicKey: 'YOUR_PUBLIC_KEY',
+                    })
+               .then(
+                    () => {
+                         console.log('SUCCESS!');
+                    },
+                    (error) => {
+                         console.log('FAILED...', error.text);
+                    },
+               );
           
           setUserName('');
           setEmail('');
@@ -91,7 +108,7 @@ function Contact() {
                </section>
                <section>
                     <div>
-                         <Form className="frm" onSubmit={handleSubmit}>
+                         <Form className="frm" onSubmit={handleSubmit} ref={form}>
                               <Form.Group as={Row} className="mb-3" controlId="formHorizontalName">
                                    <Form.Label column sm={1} className="lbl">
                                         Name
