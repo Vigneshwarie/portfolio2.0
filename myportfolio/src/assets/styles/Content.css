@@ -41,7 +41,7 @@
 
 .content-section .icon-box .icon i {
      color: #fff;
-     font-size: 28px;
+     font-size: 30px;
 }
 
 .content-section .icon-box .icon::before {
@@ -55,6 +55,12 @@
      border-radius: 5px;
      transition: all 0.3s ease-out 0s;
      transform: translateZ(-1px);
+}
+
+.content-section .icon-box .row .col a i.bx {
+     color: #fff;
+     font-size: 28px;
+
 }
 
 .content-section .icon-box h4 {
