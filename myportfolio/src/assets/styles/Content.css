@@ -178,6 +178,10 @@
 .content-section .frm{
      padding: 20px;
      align-items: left;
+     color: #fff;
+     width: 100%;
+     background: rgba(255, 255, 255, 0.08);
+     margin-top: 25px;
 }
 
 .content-section .lbl {
@@ -211,8 +215,6 @@
 .contact .info-box .contact {
      margin: 5px 0 0 68px;
      display:flex;
-     align-items: stretch;
-     
 }
 
 .contact .info-box .contact a {
@@ -229,4 +231,31 @@
      color:#000;
 }
 
+.contact {
+     margin-top: 40px;
+     display: flex;
+}
+
+.contact a {
+     font-size: 16px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(255, 255, 255, 0.1);
+     color: #fff;
+     line-height: 1;
+     margin-right: 8px;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+}
+
+.contact a:hover {
+     background: #62CF78;
+     color: #000;
+}
+
+.contact {
+     margin-top: 15px;
+}
 /*End Contact Section */
