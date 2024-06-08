@@ -7,6 +7,7 @@ import Social from '../components/Social';
 import { validateEmail } from '../utils/helpers';
 import emailjs from '@emailjs/browser';
 
+
 function Contact() {
      useEffect(() => {
           AOS.init({
@@ -20,6 +21,9 @@ function Contact() {
      );
 
      const form = useRef();
+     const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+     const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+     const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
      const [username, setUserName] = useState('');
      const [email, setEmail] = useState('');
@@ -42,8 +46,8 @@ function Contact() {
           } 
 
           emailjs
-               .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-                         publicKey: 'YOUR_PUBLIC_KEY',
+               .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+                         publicKey: PUBLIC_KEY,
                     })
                .then(
                     () => {
