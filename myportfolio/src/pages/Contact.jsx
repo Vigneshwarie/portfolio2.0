@@ -67,26 +67,28 @@ function Contact() {
                     </div>
                </section>
                
-               <div className="row mt-2">
-                    <div className="col-md-6 mt-4 d-flex align-items-stretch">
-                         <div className="info-box">
-                              <i className="bx bx-share-alt"></i>
-                              <h3>Social Profiles</h3>
-                              <Social />
+               <section>
+                    <div className="row mt-2">
+                         <div className="col-md-6 mt-4 d-flex align-items-stretch">
+                              <div className="info-box">
+                                   <i className="bx bx-share-alt"></i>
+                                   <h3>Social Profiles</h3>
+                                   <Social />
+                              </div>
                          </div>
-                    </div>
 
-                    <div className="col-md-6 mt-4 d-flex align-items-stretch">
-                         <div className="info-box">
-                              <i className="bx bxs-contact"></i>
-                              <h3>Email &amp; Phone</h3>
-                              <div className="contact">
-                                   <a href="#" className=""><i className="bx bx-envelope"></i></a>
-                                   <a href="#" className=""><i className="bx bx-phone-call"></i></a>
+                         <div className="col-md-6 mt-4 d-flex align-items-stretch">
+                              <div className="info-box">
+                                   <i className="bx bxs-contact"></i>
+                                   <h3>Email &amp; Phone</h3>
+                                   <div className="contact">
+                                        <a href="mailto:vigneswari.sambandam@gmail.com" className="envelope"><i className="bi bi-envelope"></i></a>
+                                        <a href="tel:+15136154472" className="telephone-inbound"><i className="bi bi-telephone-inbound"></i></a>
+                                   </div>
                               </div>
                          </div>
                     </div>
-               </div>
+               </section>
                <section>
                     <div>
                          <Form className="frm" onSubmit={handleSubmit}>
