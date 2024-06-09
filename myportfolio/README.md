@@ -19,9 +19,9 @@ One can download the code from the above link. To use the application, one must 
 
 On successful installation and execution, the application will run successfully and starts listening to the port. One can navigate to the browser and type localhost for the mentioned port. The application will display as below.
 
-![alt text](myportfolio/src/assets/images/Homepage.png)
+![alt text](src/assets/images/Homepage.png)
 
-![alt text](myportfolio/src/assets/images/Skills.png)
+![alt text](src/assets/images/Skills.png)
 
 ## Credits
 
