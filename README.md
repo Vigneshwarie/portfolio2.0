@@ -43,7 +43,11 @@ https://icons.getbootstrap.com/
 
 https://michalsnik.github.io/aos/
 
+https://www.emailjs.com/docs/sdk/installation/
+
 https://www.emailjs.com/docs/examples/reactjs/
+
+https://jasonwatmore.com/post/2022/06/22/react-access-environment-variables-from-dotenv-env
 
 ## License
 

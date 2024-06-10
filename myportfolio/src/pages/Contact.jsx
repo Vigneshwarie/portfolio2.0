@@ -6,7 +6,7 @@ import '../assets/styles/Content.css';
 import Social from '../components/Social';
 import { validateEmail } from '../utils/helpers';
 import emailjs from '@emailjs/browser';
-
+import AlertMessage from '../components/AlertMessage';
 
 function Contact() {
      useEffect(() => {
@@ -19,6 +19,10 @@ function Contact() {
           AOS.refresh();
      }, []
      );
+
+     const [showModal, setShowModal] = useState(false);
+     const [popup, setPopup] = useState('');
+
 
      const form = useRef();
      const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
@@ -52,6 +56,8 @@ function Contact() {
                .then(
                     () => {
                          console.log('SUCCESS!');
+                         setPopup('Thank you for contacting. I will contact you soon!');
+                         setShowModal(true);
                     },
                     (error) => {
                          console.log('FAILED...', error.text);
@@ -74,6 +80,10 @@ function Contact() {
                setMessage(value);
           }
      }
+
+     const handleCloseModal = () => {
+          setShowModal(false);
+     };
      
      return (
           <Container className="content-section" data-aos="fade-up" data-aos-delay="100">
@@ -140,6 +150,7 @@ function Contact() {
                               <Form.Group as={Row} className="mb-3">
                                    <Col sm={3}>
                                         <Button type="submit" className="btn">Submit</Button>
+                                        <AlertMessage show={showModal} message={popup} onClose={handleCloseModal} />
                                    </Col>
                               </Form.Group>
                          </Form>
