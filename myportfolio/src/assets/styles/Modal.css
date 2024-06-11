@@ -1,0 +1,24 @@
+div.transparent div.modal-content {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+div.modal-content .popup-box {
+     background: #444444;
+     color: #fff;
+     font-family: Georgia, Garamond, Helvetica, 'Helvetica Neue', 'Open Sans', 'Segoe UI', 'sans-serif';
+     font-weight: bold;
+} 
+
+.btn.btn-primary {
+     background-color: #62CF78;
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+     border-color: #62CF78;
+}
+
+.btn.btn-primary:hover {
+     background-color: #35e888;
+     color: #fff;
+}

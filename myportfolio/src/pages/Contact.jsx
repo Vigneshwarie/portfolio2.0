@@ -56,7 +56,7 @@ function Contact() {
                .then(
                     () => {
                          console.log('SUCCESS!');
-                         setPopup('Thank you for contacting. I will contact you soon!');
+                         setPopup('Thank you for your message. I will contact you soon!');
                          setShowModal(true);
                     },
                     (error) => {
