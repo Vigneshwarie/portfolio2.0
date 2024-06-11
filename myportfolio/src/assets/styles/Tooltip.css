@@ -1,6 +1,32 @@
 #button-tooltip {
      font-family: Georgia, Garamond, Helvetica, 'Helvetica Neue', 'Open Sans', 'Segoe UI', 'sans-serif';
-     font-weight: bold;
+     font-weight: bolder;
      color: #fff;
      font-size: 12px;
+}
+
+.custom-tooltip .tooltip-inner {
+     background-color: #fff; 
+     color: #62CF78; 
+     border: 1px solid #fff; 
+}
+
+.custom-tooltip.bs-tooltip-top .tooltip-arrow::before,
+.custom-tooltip.bs-tooltip-auto[x-placement^="top"] .tooltip-arrow::before {
+     border-top-color: #fff; 
+}
+
+.custom-tooltip.bs-tooltip-right .tooltip-arrow::before,
+.custom-tooltip.bs-tooltip-auto[x-placement^="right"] .tooltip-arrow::before {
+     border-right-color: #62CF78; 
+}
+
+.custom-tooltip.bs-tooltip-bottom .tooltip-arrow::before,
+.custom-tooltip.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow::before {
+     border-bottom-color: #fff; 
+}
+
+.custom-tooltip.bs-tooltip-left .tooltip-arrow::before,
+.custom-tooltip.bs-tooltip-auto[x-placement^="left"] .tooltip-arrow::before {
+     border-left-color: #62CF78; 
 }
