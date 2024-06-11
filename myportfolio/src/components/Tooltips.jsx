@@ -6,7 +6,7 @@ const Tooltips = ({message, children, position}) => {
      return (
           <OverlayTrigger
                placement={position}
-               overlay={<Tooltip id="button-tooltip">{message}</Tooltip>}
+               overlay={<Tooltip id="button-tooltip" className='custom-tooltip'>{message}</Tooltip>}
           >
                {React.Children.only(children)}
           </OverlayTrigger>
