@@ -7,6 +7,7 @@ import Social from '../components/Social';
 import { validateEmail } from '../utils/helpers';
 import emailjs from '@emailjs/browser';
 import AlertMessage from '../components/AlertMessage';
+import Tooltips from '../components/Tooltips';
 
 function Contact() {
      useEffect(() => {
@@ -113,8 +114,8 @@ function Contact() {
                                    <i className="bx bxs-contact"></i>
                                    <h3>Email &amp; Phone</h3>
                                    <div className="contact">
-                                        <a href="mailto:vigneswari.sambandam@gmail.com" className="envelope"><i className="bi bi-envelope"></i></a>
-                                        <a href="tel:+15136154472" className="telephone-inbound"><i className="bi bi-telephone-inbound"></i></a>
+                                        <Tooltips message="Email" children ={<a href="mailto:vigneswari.sambandam@gmail.com" className="envelope"><i className="bi bi-envelope"></i></a>} position="bottom"/>
+                                        <Tooltips message="Phone" children={<a href="tel:+15136154472" className="telephone-inbound"><i className="bi bi-telephone-inbound"></i></a>} position="bottom"/>
                                    </div>
                               </div>
                          </div>
